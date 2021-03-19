@@ -1,6 +1,10 @@
 # pracma NEWS
 
 
+## pracma 2.3.4 (2021-03-18)
+
+* Small correction in 'movavg()': default type now is 's'.
+
 ## pracma 2.3.3 (2021-01-22)
 
 * Forgot to correct URL addresses in the Readme.md file.
