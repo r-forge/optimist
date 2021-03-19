@@ -3,6 +3,10 @@
 ------------------------------------------------------------------------------
 
 
+Version 0.7-6 (2021-03-17)
+
+  o Help clarified for omega() and Omega() functions.
+
 Version 0.7-5 (2019-11-26)
 
   o collatz() calculates generalized Collatz sequences.
