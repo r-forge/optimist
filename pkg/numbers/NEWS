@@ -3,9 +3,14 @@
 ------------------------------------------------------------------------------
 
 
-Version 0.7-8 (2021-04-07)
+Version 0.7-9 (2021-04-08)
 
   o farey_seq() generates the full n-th Farey series (slow).
+
+Version 0.7-8 (2021-04-07)
+
+  o bernoulliq() generates the Bernoulli numbers up to n=24.
+  o pascal_triangle() generates Pascal numbers in a rectangle.
   o modq() extends the modulo operator to rational numbers.
 
 Version 0.7-6 (2021-03-17)
