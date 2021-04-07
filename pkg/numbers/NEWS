@@ -3,8 +3,9 @@
 ------------------------------------------------------------------------------
 
 
-Version 0.7-7 (2021-04-06)
+Version 0.7-8 (2021-04-07)
 
+  o farey_seq() generates the full n-th Farey series (slow).
   o modq() extends the modulo operator to rational numbers.
 
 Version 0.7-6 (2021-03-17)
