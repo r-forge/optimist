@@ -2,6 +2,7 @@
 
 export(agm)
 export(bell)
+export(bernoulli_numbers)
 export(catalan)
 export(chinese)
 export(collatz)
