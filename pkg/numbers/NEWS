@@ -3,6 +3,10 @@
 ------------------------------------------------------------------------------
 
 
+Version 0.8-0 (2021-04-11)
+
+  o Corrected all old and 'insecure' Internet links with 'https:'.
+
 Version 0.7-9 (2021-04-10)
 
   o stern_brocot_seq() generates the Stern-Brocot sequence (fast).
