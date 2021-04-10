@@ -3,8 +3,9 @@
 ------------------------------------------------------------------------------
 
 
-Version 0.8-0 (2021-04-11)
+Version 0.8-1 (2021-04-11)
 
+  o carmichael() determines Carmichael numbers.
   o Corrected all old and 'insecure' Internet links with 'https:'.
 
 Version 0.7-9 (2021-04-10)
