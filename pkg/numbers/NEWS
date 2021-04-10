@@ -3,9 +3,9 @@
 ------------------------------------------------------------------------------
 
 
-Version 0.7-9 (2021-04-08)
+Version 0.7-9 (2021-04-10)
 
-  o stern_brocot_seq() generates the Stern-Brocot sequence.
+  o stern_brocot_seq() generates the Stern-Brocot sequence (fast).
   o farey_seq() generates the full n-th Farey series (slow).
 
 Version 0.7-8 (2021-04-07)
