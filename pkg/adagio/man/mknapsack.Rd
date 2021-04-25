@@ -104,4 +104,4 @@ cap = 400
 system.time(is <- mknapsack(w, p, cap))  # 0.001 sec
 }
 }
-
+\keyword{ discrete-optimization }

@@ -63,3 +63,4 @@ system.time(T2 <- solve_LSAP(cmat))     # elapsed: 0.014
 sum(cmat[cbind(1:n, T2)])               # 145.75
 }
 }
+\keyword{ discrete-optimization }

@@ -3,6 +3,11 @@
 ------------------------------------------------------------------------------
 
 
+Changes in Version 0.8.2 (2021-04-24)
+
+  o Added a one-line description for testfunction 'fnNesterov1'.
+  o setcover() solves the Set Cover problem in discrete optimization.
+
 Changes in Version 0.8.1 (2021-04-22)
 
   o Removed Fortran code for 'maxsub()' and 'maxsub2d()'.
