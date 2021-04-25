@@ -3,6 +3,20 @@
 ------------------------------------------------------------------------------
 
 
+Changes in Version 0.8.1 (2021-04-22)
+
+  o Removed Fortran code for 'maxsub()' and 'maxsub2d()'.
+  o 'assignment()' uses 'lp.assign' from the 'lpSolve' package;
+    now numeric cost matrices are allowed, not only integer ones.
+  o 'mknapsack()': Fortran code replaced by a linear program;
+    also interchanged the weight and profit arguments.
+
+Changes in Version 0.8.0 (2021-04-21)
+
+  o Restart 'adagio' by avoiding Fortran code now and forever.
+  o Imports 'lpSolve' for treating mixed-integer linear programs.
+
+
 Changes in Version 0.7.2 (2019-12-12)
 
     o Corrected maxsub2d() and Fortran, fix provided by Yogesh Bansal.
