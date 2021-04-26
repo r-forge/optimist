@@ -34,9 +34,6 @@ mknapsack(w, p, cap)
   but the 'dynamic programming' version in the \code{knapsack} function
   is faster (but: allows only integer values).
 
-  Knapsack procedures can even solve subset sum problems,
-  see the examples 4 and 5 below.
-
   The solution found is most often not unique and may not be the most compact
   one. In the future, we will attempt to 'compactify' through backtracking.
   The number of backtracks will be returned in list element \code{bs}.
@@ -49,6 +46,9 @@ mknapsack(w, p, cap)
 \note{
   Contrary to earlier versions, the sequence of profits and weights has been
   interchanged: first the weights, then profits.
+
+  The compiled version was transferred to the \code{knapsack} package on
+  R-Forge (see project 'optimist').
 }
 \references{
   Kellerer, H., U. Pferschy, and D. Pisinger (2004). Knapsack Problems.
@@ -84,24 +84,39 @@ is <- mknapsack(w, p, cap)
 # kps 1: 3,4,5;  kps 2: 1,6,9; value: 452 
 
 \dontrun{
-##  Example 4: subset sum
-p <- seq(2, 44, by = 2)^2
-w <- p
-is <- mknapsack(w, p, 2012)
-sum((2 * which(is$ksack == 1))^2)  # 4 + 36 + 64 + 144 + 1764 = 2012
+# How to Cut Your Planks with R
+# R-bloggers, Rasmus Baath, 2016-06-12
+#
+# This is application of multiple knapsacks to cutting planks into pieces.
 
-##  Example 5: maximize number of items
-w <- seq(2, 44, by = 2)^2
-p <- numeric(22) + 1
-is <- mknapsack(w, p, 2012)  # 4+36+64+100+144+196+256+324+400+484 = 2012
+planks_we_have <- c(120, 137, 220, 420, 480)
+planks_we_want <- c(19, 19, 19, 19, 79, 79, 79, 103, 103,
+                    103, 135, 135, 135, 135, 160)
+s <- mknapsack(planks_we_want, planks_we_want + 1, planks_we_have)
+s$ksack
+##  [1] 5 5 5 5 3 5 5 4 1 5 4 5 3 2 4
 
-## Example from Rosetta Code:
-w = c(  9, 13, 153,  50, 15, 68, 27, 39, 23, 52, 11,
-       32, 24,  48,  73, 42, 43, 22,  7, 18,  4, 30)
-p = c(150, 35, 200, 160, 60, 45, 60, 40, 30, 10, 70,
-       30, 15,  10,  40, 70, 75, 80, 20, 12, 50, 10)
-cap = 400
-system.time(is <- mknapsack(w, p, cap))  # 0.001 sec
+# Solution w/o backtracking
+# bin 1 :  103                          | Rest:  17
+# bin 2 :  135                          | Rest:   2
+# bin 3 :   79 +  135                   | Rest:   6
+# bin 4 :  103 +  135 + 160             | Rest:  22
+# bin 5 : 4*19 + 2*79 + 103 + 135       | Rest:   8
+#
+# Solution with reversing the bins (bigger ones first)
+# bin 1 :  103                          | Rest:   4
+# bin 2 :  2*19 +    79                 | Rest:  20
+# bin 3 :   79  +   135                 | Rest:   6
+# bin 4 : 2*19  +    79 + 135 + 160     | Rest:   8
+# bin 5 : 2*103 + 2*135                 | Rest:  17
+#
+# Solution with backtracking (compactification)
+# sol = c(1, 4, 4, 1, 1, 3, 4, 5, 5, 5, 5, 4, 2, 3, 4)
+# bin 1 : 2*19 +   79                   | Rest:   3
+# bin 2 :  135                          | Rest:   2
+# bin 3 :   79 +  135                   | Rest:   6
+# bin 4 : 2*19 +   79 + 135 + 160       | Rest:   8
+# bin 5 : 3*103 + 135                   | Rest:  36
 }
 }
 \keyword{ discrete-optimization }

@@ -5,8 +5,9 @@
 
 Changes in Version 0.8.2 (2021-04-24)
 
-  o Added a one-line description for testfunction 'fnNesterov1'.
   o setcover() solves the Set Cover problem in discrete optimization.
+  o Added a one-line description for testfunction 'fnNesterov1'.
+  o Corrected help pages for 'knapsack()' and 'mknapsack()'.
 
 Changes in Version 0.8.1 (2021-04-22)
 
