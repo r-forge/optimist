@@ -3,6 +3,12 @@
 ------------------------------------------------------------------------------
 
 
+Changes in Version 0.8.3 (2021-04-28)
+
+  o Small corrections in subsetsum(); added sss_test() -- no indices.
+    Changed default values of arguments for methods and sorting.
+  o occurs() finds index positions of subsequences in integer sequences.
+
 Changes in Version 0.8.2 (2021-04-24)
 
   o setcover() solves the Set Cover problem in discrete optimization.

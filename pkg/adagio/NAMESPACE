@@ -18,10 +18,10 @@ export(fnRosenbrock, grRosenbrock,
 export(fnTrefethen, fnWagon)
 export(maxquad)
 
-export(maxsub, maxsub2d)
-export(maxempty)
-export(assignment, subsetsum, setcover,
-       knapsack, mknapsack)
+export(occurs)
+export(maxsub, maxsub2d, maxempty)
+export(assignment, subsetsum, sss_test,
+       setcover, knapsack, mknapsack)
 
 export(neldermead, neldermeadb)
 export(hookejeeves)
