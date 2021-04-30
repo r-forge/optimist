@@ -2,10 +2,10 @@ Package: adagio
 Type: Package
 Title: Discrete and Global Optimization Routines
 Version: 0.8.3
-Date: 2021-04-28
-Authors@R: person("Hans W.", "Borchers", email = "hwborchers@gmail.com",
+Date: 2021-04-30
+Authors@R: person("Hans W.", "Borchers", email = "hwborchers@googlemail.com",
                   role = c("aut", "cre"))
-Maintainer: Hans W. Borchers <hwborchers@gmail.com>
+Maintainer: Hans W. Borchers <hwborchers@googlemail.com>
 Depends: R (>= 3.1.0)
 Imports: graphics, stats, lpSolve (>= 5.6.15)
 Description:
