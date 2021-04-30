@@ -3,7 +3,7 @@
 ------------------------------------------------------------------------------
 
 
-Changes in Version 0.8.3 (2021-04-28)
+Changes in Version 0.8.3 (2021-04-30)
 
   o Small corrections in subsetsum(); added sss_test() -- no indices.
     Changed default values of arguments for methods and sorting.
