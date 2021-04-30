@@ -14,4 +14,3 @@ Description:
 	derivative-free Nelder-Mead and Hooke-Jeeves minimization, and
 	some (evolutionary) global optimization functions.
 License: GPL (>= 3)
-LazyLoad: yes
