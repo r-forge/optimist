@@ -3,10 +3,17 @@
 ------------------------------------------------------------------------------
 
 
+Changes in Version 0.4.1 (2021-05-04)
+
+    o assignment() solves the assignment problem (for integers).
+    o mknapsack() solves the multiple knapsack problem.
+
+
 Changes in Version 0.3.2 (2016-10-02)
 
     o binpacking() solves the bin packing problem (for integers).
     o input checking and backtracking incl. in the API of binpacking().
+
 
 Changes in Version 0.2.3 (2012-02-08)
 

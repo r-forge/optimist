@@ -5,5 +5,7 @@
 useDynLib('knapsack')
 
 export(knapsack)
+export(mknapsack)
 export(subsetsum)
 export(binpacking)
+export(assignment)
