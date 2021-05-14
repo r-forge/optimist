@@ -52,10 +52,4 @@ ratFarey(pi, 1e5, upper = FALSE)           # 312689/99532 - pi ~= 3e-11
 ratFarey(4/5, 5)                           # 4/5
 ratFarey(4/5, 4)                           # 1/1
 ratFarey(4/5, 4, upper = FALSE)            # 3/4
-
-\dontrun{
-farey_seq(5)
-# Big Rational ('bigq') object of length 11:
-#  [1] 0   1/5 1/4 1/3 2/5 1/2 3/5 2/3 3/4 4/5 1 
-}
 }
