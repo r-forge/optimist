@@ -1,6 +1,17 @@
 # pracma NEWS
 
 
+## pracma 2.3.6 (soon to come)
+
+* deval() will use cubic (instead of linear) interpolation,
+  and deeve() will become more usable.
+
+## pracma 2.3.5 (2021-07-10)
+
+* Corrected a bug in subspace() - thanks to David Fleischer.
+* Corrected a small but annoying bug in steep_descent().
+* Allows for complex matrices in pinv() (and mldivide()).
+
 ## pracma 2.3.4 (2021-03-18)
 
 * Small correction in 'movavg()': default type now is 's'.
