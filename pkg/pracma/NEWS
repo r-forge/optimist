@@ -3,6 +3,17 @@
 ------------------------------------------------------------------------------
 
 
+CHANGES IN VERSION 2.3.6 (soon to come)
+
+    o deval() will use cubic (instead of linear) interpolation
+      and deeve() will become more usable.
+
+CHANGES IN VERSION 2.3.5 (2021-07-10)
+
+    o Corrected a bug in subspace() - thanks to David Fleischer.
+    o Corrected a small but annoying bug in steep_descent().
+    o Allows for complex matrices in pinv() (and mldivide()).
+
 CHANGES IN VERSION 2.3.4 (2021-03-18)
 
     o Small correction in movavg(): default type now is 's'.
