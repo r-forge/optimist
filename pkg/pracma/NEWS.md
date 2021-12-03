@@ -1,10 +1,10 @@
 # pracma NEWS
 
 
-## pracma 2.3.6 (soon to come)
+## pracma 2.3.6 (2021-12-03)
 
-* deval() will use cubic (instead of linear) interpolation,
-  and deeve() will become more usable.
+* Corrected randortho() with return value 'q %*% diag(ph) # %*% q',
+  as researched and reported by Daniel Kessler; thanks a lot.
 
 ## pracma 2.3.5 (2021-07-10)
 
