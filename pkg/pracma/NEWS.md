@@ -5,6 +5,7 @@
 
 * Corrected randortho() with return value 'q %*% diag(ph) # %*% q',
   as researched and reported by Daniel Kessler; thanks a lot.
+* Removed the Nile data (without warning).
 
 ## pracma 2.3.5 (2021-07-10)
 
