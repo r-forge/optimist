@@ -3,10 +3,11 @@
 ------------------------------------------------------------------------------
 
 
-CHANGES IN VERSION 2.3.6 (2021-12-03)
+CHANGES IN VERSION 2.3.6 (2021-12-06)
 
     o Corrected randortho() with return value 'q %*% diag(ph) # %*% q',
       as researched and reported by Daniel Kessler; thanks a lot.
+    o Function deeve() requires the x-coordinates to be sorted.
     o Removed the Nile data (without warning).
 
 CHANGES IN VERSION 2.3.5 (2021-07-10)
