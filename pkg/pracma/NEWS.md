@@ -1,6 +1,10 @@
 # pracma NEWS
 
 
+## pracma 2.3.7 (2022-01-09)
+
+* Corrected a small bug in randi(), thanks to Luke Cherveny.
+
 ## pracma 2.3.6 (2021-12-03)
 
 * Corrected randortho() with return value 'q %*% diag(ph) # %*% q',
