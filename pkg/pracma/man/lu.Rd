@@ -1,5 +1,6 @@
 \name{lu}
 \alias{lu}
+\alias{lu_crout}
 \alias{lufact}
 \alias{lusys}
 \title{
@@ -10,6 +11,7 @@
 }
 \usage{
 lu(A, scheme = c("kji", "jki", "ijk"))
+lu_crout(A)
 
 lufact(A)
 lusys(A, b)
@@ -29,12 +31,17 @@ lusys(A, b)
   two compact forms, here the Doolite factorization (the Crout factorization
   would be similar).
 
+  \code{lu_crout} implements the Crout algorithm. For the Doolite algorithm,
+  the \code{L} matrix has ones on its diagonal, for the Crout algorithm, the 
+  diagonal of the \code{U} matrix only has ones.
+
   \code{lufact} applies partial pivoting (along the rows).
   \code{lusys} uses LU factorization to solve the linear system \code{A*x=b}.
 }
 \value{
-   \code{lu} returns a list with components \code{L} and \code{U}, the two
-   lower and upper triangular matrices such that \code{A=L\%*\%U}. 
+   \code{lu} and \code{lu_crout} return a list with components \code{L}
+   and \code{U}, the lower and upper triangular matrices such that
+   \code{A=L\%*\%U}. 
 
   \code{lufact} returns a list with \code{L} and \code{U} combined into one
   matrix \code{LU}, the \code{rows} used in partial pivoting, and \code{det}

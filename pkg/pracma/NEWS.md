@@ -1,8 +1,9 @@
 # pracma NEWS
 
 
-## pracma 2.3.7 (2022-01-09)
+## pracma 2.3.7 (2022-01-17)
 
+* Added lu_crout(), Crout's algorithm for LU matrix decomposition.
 * Corrected a small bug in randi(), thanks to Luke Cherveny.
 
 ## pracma 2.3.6 (2021-12-03)
