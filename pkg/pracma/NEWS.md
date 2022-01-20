@@ -1,6 +1,11 @@
 # pracma NEWS
 
 
+## pracma 2.3.8 (2022-01-20)
+
+* tbd.
+* Bug in pinv() for complex input, reported by Stephane Laurent.
+
 ## pracma 2.3.7 (2022-01-17)
 
 * Added lu_crout(), Crout's algorithm for LU matrix decomposition.

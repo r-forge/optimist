@@ -37,6 +37,10 @@ lusys(A, b)
 
   \code{lufact} applies partial pivoting (along the rows).
   \code{lusys} uses LU factorization to solve the linear system \code{A*x=b}.
+
+  These function are not meant to process huge matrices or linear systems of
+  equations.
+  Without pivoting they may also be harmed by considerable inaccuracies.
 }
 \value{
    \code{lu} and \code{lu_crout} return a list with components \code{L}
@@ -58,9 +62,8 @@ lusys(A, b)
   Fourth Edition, Pearson (Prentice-Hall), updated 2006.
 }
 \note{
-  This function is not meant to process huge matrices or linear systems of
-  equations.
-  Without pivoting it may also be harmed by considerable inaccuracies.
+  To get the Crout decomposition of a matrix \code{A} do
+  \code{Z <- lu(t(A)); L <- t(Z$U); U <- t(Z$L)}.
 }
 \seealso{
   \code{\link{qr}}
