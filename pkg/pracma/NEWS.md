@@ -1,9 +1,9 @@
 # pracma NEWS
 
 
-## pracma 2.3.8 (2022-01-20)
+## pracma 2.3.8 (2022-02-19)
 
-* tbd.
+* 'length_1 eror' for logical operators on integral() help page.
 * Bug in pinv() for complex input, reported by Stephane Laurent.
 
 ## pracma 2.3.7 (2022-01-17)
