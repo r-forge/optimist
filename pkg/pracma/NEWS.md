@@ -1,5 +1,9 @@
 # pracma NEWS
 
+## pracma 2.3.9 (2022-03-22)
+
+* Spherical coordinates better explained in help files.
+* Deprecated option 'fast' was removed from circlefit().
 
 ## pracma 2.3.8 (2022-02-19)
 
