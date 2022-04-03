@@ -1,5 +1,11 @@
 # pracma NEWS
 
+## pracma 2.4.0 (2022-04-01)
+
+* hessvec() approximates the multiplication of Hessian and vector
+  (thanks to Ravi Varadhan for pointing out Pearlmutter's method).
+* hessdiag() computes the diagonal of Hessian (finite differences).
+
 ## pracma 2.3.9 (2022-03-22)
 
 * Spherical coordinates better explained in help files.
