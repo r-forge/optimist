@@ -1,5 +1,9 @@
 # pracma NEWS
 
+## pracma 2.4.1 (2022-04-14)
+
+* Added an example of using inequality constraints with anms().
+
 ## pracma 2.4.0 (2022-04-01)
 
 * hessvec() approximates the multiplication of Hessian and vector
