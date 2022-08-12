@@ -1,8 +1,9 @@
 # pracma NEWS
 
-## pracma 2.4.1 (2022-04-14)
+## pracma 2.4.1 (2022-08-03)
 
 * Added an example of using inequality constraints with anms().
+* Added more vectorized 'distmat2' to the help page of 'distmat'.
 
 ## pracma 2.4.0 (2022-04-01)
 
