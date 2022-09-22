@@ -1,5 +1,9 @@
 # pracma NEWS
 
+## pracma 2.4.2 (2022-09-21)
+
+* Corrected a bug in logit() - 'length_1 error' again.
+
 ## pracma 2.4.1 (2022-08-03)
 
 * Added an example of using inequality constraints with anms().
