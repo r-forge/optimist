@@ -3,6 +3,7 @@
 ## pracma 2.4.2 (2022-09-21)
 
 * Corrected a bug in logit() - 'length_1 error' again.
+* Replaced 'class() =' with 'inherits(...)' in function ppval().
 
 ## pracma 2.4.1 (2022-08-03)
 

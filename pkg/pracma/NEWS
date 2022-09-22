@@ -6,6 +6,7 @@
 CHANGES IN VERSION 2.4.2 (2022-09-21)
 
     o Corrected a bug in logit() - 'length_1 error' again.
+    o Replaced 'class() =' with 'inherits(...)' in function ppval().
 
 CHANGES IN VERSION 2.4.1 (2022-08-03)
 
