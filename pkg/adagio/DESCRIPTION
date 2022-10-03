@@ -1,8 +1,8 @@
 Package: adagio
 Type: Package
 Title: Discrete and Global Optimization Routines
-Version: 0.8.4
-Date: 2021-04-30
+Version: 0.8.5
+Date: 2021-09-30
 Authors@R: person("Hans W.", "Borchers", email = "hwborchers@googlemail.com",
                   role = c("aut", "cre"))
 Maintainer: Hans W. Borchers <hwborchers@googlemail.com>
