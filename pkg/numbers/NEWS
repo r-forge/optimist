@@ -3,6 +3,12 @@
 ------------------------------------------------------------------------------
 
 
+Version 0.8-3 (2022-11-11)
+
+  o Added isSquare() and isSquarefree() for convenience.
+  o Changed the default tolerance of contFrac() to 1e-12.
+  o Corrected some misuses of '&' resp '|'.
+
 Version 0.8-2 (2021-05-13)
 
   o Removed example for farey_seq() from the 'ratFarey' help page

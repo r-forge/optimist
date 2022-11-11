@@ -7,7 +7,7 @@
   Evaluate a continuous fraction or generate one.
 }
 \usage{
-contFrac(x, tol = 1e-06)
+contFrac(x, tol = 1e-12)
 }
 \arguments{
   \item{x}{a numeric scalar or vector.}

@@ -3,7 +3,7 @@
 ##
 
 
-contFrac <- function(x, tol = 1e-6) {
+contFrac <- function(x, tol = 1e-12) {
     if (!is.numeric(x) || is.matrix(x))
         stop("Argument 'x' must be a numeric scalar or vector.")
 
