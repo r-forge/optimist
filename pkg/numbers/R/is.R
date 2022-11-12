@@ -5,7 +5,12 @@
 
 isNatural <- function(n) {
     stopifnot(is.numeric(n))
-    floor(n) == ceiling(n) && n >= 1 && n <= 2^53 - 1
+    if (any(floor(n) != ceiling(n)) ||
+        any(n < 1) || any(n > 2^53 - 1)) {
+        return(FALSE)
+    } else {
+        return(TRUE)
+    }
 }
 
 

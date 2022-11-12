@@ -1,8 +1,8 @@
 Package: numbers
 Type: Package
 Title: Number-Theoretic Functions
-Version: 0.8-3
-Date: 2022-11-11
+Version: 0.8-4
+Date: 2022-11-12
 Author: Hans Werner Borchers
 Maintainer: Hans W. Borchers <hwborchers@googlemail.com>
 Depends: R (>= 4.1.0)

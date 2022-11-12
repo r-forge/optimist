@@ -3,6 +3,16 @@
 ------------------------------------------------------------------------------
 
 
+Version 0.8-5 (2022-11-13)
+
+  o solvePellsEq() Pell's equation solved with continued fractions.
+  o cf2num()
+
+Version 0.8-4 (2022-11-12)
+
+  o convergents() as another approach for continued fractions.
+  o chinese() and isNatural(): Corrected "coerce to logical" bug.
+
 Version 0.8-3 (2022-11-11)
 
   o Added isSquare() and isSquarefree() for convenience.
