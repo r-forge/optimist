@@ -3,11 +3,6 @@
 ------------------------------------------------------------------------------
 
 
-Version 0.8-5 (2022-11-13)
-
-  o solvePellsEq() Pell's equation solved with continued fractions.
-  o cf2num()
-
 Version 0.8-4 (2022-11-12)
 
   o convergents() as another approach for continued fractions.
