@@ -27,7 +27,7 @@ isPrime <- function(x) {
     for (i in 1:n) {
         L[i] <- all(X[i] %% p[p < X[i]] != 0)
     }
-    L[X == 1 || X == 0] <- FALSE
+    L[X == 1 | X == 0] <- FALSE
     dim(L) <- dim(x)
     return(L)
 }
