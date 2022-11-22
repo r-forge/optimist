@@ -3,9 +3,10 @@
 ------------------------------------------------------------------------------
 
 
-Version 0.8-4 (2022-11-12)
+Version 0.8-4 (2022-11-22)
 
-  o convergents() as another approach for continued fractions.
+  o contFrac() renamed to contfrac().
+  o contfrac() additionally returns the convergents 'p' and 'q'.
   o chinese() and isNatural(): Corrected "coerce to logical" bug.
 
 Version 0.8-3 (2022-11-11)

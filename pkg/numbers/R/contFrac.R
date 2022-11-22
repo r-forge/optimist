@@ -3,18 +3,20 @@
 ##
 
 
-contFrac <- function(x, tol = 1e-12) {
+contfrac <- function(x, tol = 1e-12) {
     if (!is.numeric(x) || is.matrix(x))
         stop("Argument 'x' must be a numeric scalar or vector.")
 
     if (length(x) > 1) {
         # Compute value of a continuous fraction
         n <- length(x)
+        p <- q <- numeric(n)
         B <- diag(1, 2)
         for (i in seq(along=x)) {
             B <- B %*% matrix(c(x[i], 1, 1, 0), 2, 2)
+            p[i] <- B[1, 1]; q[i] <- B[2, 1]
         }
-        return(B[1,1]/B[2,1])
+        return(list(f = B[1,1]/B[2,1], p = p, q = q, prec = 1/B[2, 1]^2))
 
     } else {
         # Generate the continuous fraction of a value
@@ -33,38 +35,6 @@ contFrac <- function(x, tol = 1e-12) {
         }
         return(list(cf = sgnx * k, rat = c(sgnx*B[1,1], B[2,1]),
                     prec = abs(x - B[1,1]/B[2,1])))
-    }
-}
-
-
-convergents <- function(x) {
-    # Given a continued fraction [a0; a1, ..., ak], determine the
-    # 'convergents' p0, ..., pk and q0, ..., qk recursively.
-    stopifnot(length(x) > 0, is.numeric(x))
-    if (any(floor(x) != ceiling(x)))
-        stop("Argument 'x' must be a vector of integers.")
-    
-    n = length(x)
-    if (n == 1) {
-        return(list(p = x[1], q = 1))
-    } else if ( n == 2) {
-        return(list(p = c(x[1], x[1]*x[2] + 1), q = c(1, x[2])))
-    } else {
-        p <- q <- numeric(n)
-        p[1] = x[1]; q[1] = 1
-        p[2] = x[1]*x[2] + 1; q[2] = x[2]
-        if (n > 2) {
-            for (i in 3:n) {
-                p[i] = x[i] * p[i-1] + p[i-2]
-                q[i] = x[i] * q[i-1] + q[i-2]
-            }
-        }
-        # B <- diag(1, 2)
-        # for (i in seq(along = x)) {
-        #     B <- B %*% matrix(c(x[i], 1, 1, 0), 2, 2)
-        #     p[i] = B[1, 1]; q[i] = B[2, 1]
-        # }
-        return(list(p = p, q = q))
     }
 }
 

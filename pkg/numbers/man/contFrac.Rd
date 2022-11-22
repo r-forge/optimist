@@ -1,6 +1,5 @@
-\name{contFrac}
-\alias{contFrac}
-\alias{convergents}
+\name{contfrac}
+\alias{contfrac}
 \title{
   Continued Fractions
 }
@@ -8,9 +7,7 @@
   Evaluate a continued fraction or generate one.
 }
 \usage{
-contFrac(x, tol = 1e-12)
-
-convergents(x)
+contfrac(x, tol = 1e-12)
 }
 \arguments{
   \item{x}{a numeric scalar or vector.}
@@ -19,40 +16,37 @@ convergents(x)
 \details{
   If \code{x} is a scalar its continued fraction will be generated up to
   the accuracy prescribed in \code{tol}. If it is of length greater 1, the
-  function assumes this is a continued fraction and computes its value.
+  function assumes this to be a continued fraction and computes its value
+  and convergents.
 
-  For implementation \code{contfrac} uses the representation of continued
-  fractions through 2-by-2 matrices, i.e. the recursion formula.
-
-  \code{convergents} will explicitly compute and return the convergents of
-  the continued fraction through this recursion.
+  The continued fraction \eqn{[b_0; b_1, \ldots, b_{n-1}]} is assumed to be
+  finite and neither periodic nor infinite. For implementation uses the
+  representation of continued fractions through 2-by-2 matrices
+  (i.e. Wallis' recursion formula from 1644).
 }
 \value{
-  Either a numeric value, or a list with components \code{cf}, numeric vector
-  representing the continued fraction \eqn{[b_0; b_1, \ldots, b_{n-1}]};
-  \code{rat}, the rational number as a vector with (numerator, denumerator);
-  and \code{prec}, the difference between \code{x} and the value of the
-  contimued fraction.
+  If \code{x} is a scalar, it will return a list with components \code{cf}
+  the continued fraction as a vector, \code{rat} the rational approximation,
+  and \code{prec} the difference between the value and this approximation.
 
-  \code{convergents} returns a list with components \code{p} and \code{q}.
+  If \code{x} is a vector, the continued fraction, then it will return a list
+   with components \code{f} the numerical value, \code{p} and \code{q} the
+   convergents, and \code{prec} an estimated precision.
 }
 \references{
   Hardy, G. H., and E. M. Wright (1979). An Introduction to the Theory of
   Numbers. Fifth Edition, Oxford University Press, New York.
 }
 \note{
-  This function are \emph{not} vectorized.
+  This function is \emph{not} vectorized.
 }
 \seealso{
 \code{\link{cf2num}}, \code{\link{ratFarey}}
 }
 \examples{
-contFrac(pi)
-contFrac(c(3, 7, 15, 1))        # rational Approx: 355/113
+contfrac(pi)
+contfrac(c(3, 7, 15, 1))        # rational Approx: 355/113
 
-contFrac(0.555)                 #  0  1  1  4 22
-contFrac(c(1, rep(2, 25)))      #  1.414213562373095, sqrt(2)
-
-convergents(c(3, 7, 15, 1))     # $p : 3  22 333 355
-                                # $q : 1   7 106 113
+contfrac(0.555)                 #  0  1  1  4 22
+contfrac(c(1, rep(2, 25)))      #  1.414213562373095, sqrt(2)
 }
