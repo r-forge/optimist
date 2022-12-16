@@ -3,6 +3,11 @@
 ------------------------------------------------------------------------------
 
 
+Version 0.8-7 (2022-12-16)
+
+  o cf2num() improved, scaled version, replacing the alternating series.
+  o num2cf() direct implementation that allows for 'mpfr' numbers.
+
 Version 0.8-5 (2022-11-22)
 
   o periodicCF() determines the the full and exact period of the 
