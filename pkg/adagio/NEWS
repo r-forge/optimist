@@ -3,6 +3,11 @@
 ------------------------------------------------------------------------------
 
 
+Changes in Version 0.8.7 (2022-12-18)
+
+  o count() added, with functionality similar to table().
+  o Corrected the explanation for fnHald() where abs() was missing.
+
 Changes in Version 0.8.5 (2022-09-30)
 
   o History() adds storage for variables and values of a function.

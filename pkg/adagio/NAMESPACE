@@ -18,7 +18,7 @@ export(fnRosenbrock, grRosenbrock,
 export(fnTrefethen, fnWagon)
 export(maxquad)
 
-export(occurs)
+export(count, occurs)
 export(maxsub, maxsub2d, maxempty)
 export(assignment, subsetsum, sss_test,
        setcover, knapsack, mknapsack,

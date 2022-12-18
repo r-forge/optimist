@@ -73,8 +73,8 @@ optimize than Rosenbrock's:
 
 \bold{Hald} -- Hald's function is a typical example of a non-smooth test
 function, from Hald and Madsen in 1981.
-\deqn{\max_{1 \le i \le n} \frac{x_1 + x_2 t_i}{1 + x_3 t_i + x_4 t_i^2 + x_5 t_i^3} - \exp(t_i)}
-where \eqn{t_i = -1 + (i - 1)/10} for \eqn{1 \le i \le 21}.
+\deqn{\max_{1 \le i \le n} | \frac{x_1 + x_2 t_i}{1 + x_3 t_i + x_4 t_i^2 + x_5 t_i^3} - \exp(t_i)|}
+where \eqn{n = 21} and \eqn{t_i = -1 + (i - 1)/10} for \eqn{1 \le i \le 21}.
 \tabular{ll}{
   No. of Vars.: \tab n =5 \cr
   Bounds: \tab -1 <= xi <= 1 \cr
