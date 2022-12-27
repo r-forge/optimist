@@ -74,6 +74,7 @@ cf2num(b0, b, a)                # 0.546302489844, error: eps()
 
 \dontrun{
 #-- Continued fraction of 1/(exp(0.5)-1) -------------------------------
+library(Rmpfr)
 e0 = 1/(exp(1/mpfr(2, precBits=128)) - 1)  #=> 1.54149408253679828413...
 x0 <- num2cf(e0, nterms=20)
 ## [1]  1  1  1  5  1  1  9  1  1 13  1  1 17  1  1 21  1  1 25  1  1

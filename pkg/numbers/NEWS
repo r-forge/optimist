@@ -3,6 +3,10 @@
 ------------------------------------------------------------------------------
 
 
+Version 0.8-9 (2022-12-19)
+
+  o modNthroot() finds n-th roots of integers modulo a prime number.
+
 Version 0.8-7 (2022-12-16)
 
   o cf2num() improved, scaled version, replacing the alternating series.
