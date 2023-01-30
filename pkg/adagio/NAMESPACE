@@ -13,7 +13,7 @@ importFrom(lpSolve, lp, lp.assign)
 # Public routines
 export(fnRosenbrock, grRosenbrock,
        fnRastrigin, grRastrigin,
-       fnNesterov, grNesterov, fnNesterov1,
+       fnNesterov, fnNesterov1,
        fnHald, grHald, fnShor, grShor)
 export(fnTrefethen, fnWagon)
 export(maxquad)
