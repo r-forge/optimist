@@ -11,9 +11,8 @@ importFrom("stats", "rnorm", "runif")
 importFrom(lpSolve, lp, lp.assign)
 
 # Public routines
-export(fnRosenbrock, grRosenbrock,
-       fnRastrigin, grRastrigin,
-       fnNesterov, fnNesterov1,
+export(fnRosenbrock, grRosenbrock, fnRastrigin, grRastrigin,
+       fnNesterov, grNesterov, fnNesterov1, fnNesterov2,
        fnHald, grHald, fnShor, grShor)
 export(fnTrefethen, fnWagon)
 export(maxquad)
