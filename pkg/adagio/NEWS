@@ -3,6 +3,10 @@
 ------------------------------------------------------------------------------
 
 
+Changes in Version 0.9.1 (2023-10-20)
+
+  o Improved Historize() and changed its ouput value considerably.
+
 Changes in Version 0.8.9 (2023-01-30)
 
   o Corrected Nesterov's test functions and gradients, and
@@ -15,7 +19,7 @@ Changes in Version 0.8.7 (2022-12-18)
 
 Changes in Version 0.8.5 (2022-09-30)
 
-  o History() adds storage for variables and values of a function.
+  o Historize() adds storage for variables and values of a function.
 
 Changes in Version 0.8.4 (2021-04-30)
 
