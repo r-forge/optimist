@@ -21,7 +21,7 @@ export(count, occurs)
 export(maxsub, maxsub2d, maxempty)
 export(assignment, subsetsum, sss_test,
        setcover, knapsack, mknapsack,
-       bpp_approx)
+       change_making, bpp_approx)
 
 export(neldermead, neldermeadb)
 export(hookejeeves)
