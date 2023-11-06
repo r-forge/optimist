@@ -1,5 +1,9 @@
 # pracma NEWS
 
+## pracma 2.4.4 (2023-11-06)
+
+* gcd(), Lcm() now require integers as input (G. Rücker reported).
+
 ## pracma 2.4.3 (2023-08-15)
 
 * Corrected a bug in the help file of nelder_mead().
