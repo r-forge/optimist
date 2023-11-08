@@ -1,8 +1,9 @@
 # pracma NEWS
 
-## pracma 2.4.4 (2023-11-06)
+## pracma 2.4.4 (2023-11-08)
 
 * gcd(), Lcm() now require integers as input (G. Rücker reported).
+* Corrections (missing brackets) in several Rd files.
 
 ## pracma 2.4.3 (2023-08-15)
 
